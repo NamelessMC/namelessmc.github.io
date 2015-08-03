@@ -1,0 +1,124 @@
+<?php
+error_reporting(~0);
+ini_set('display_errors', 1);
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for the NamelessMC website package">
+    <meta name="author" content="Samerton">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>NamelessMC Documentation &bull; Websend</title>
+
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	
+	<style>
+	body {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+
+	.navbar {
+	  margin-bottom: 20px;
+	}
+
+	</style>
+	
+  </head>
+  
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">NamelessMC</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="http://demo.worldscapemc.co.uk">Demo</a></li>
+		      <li><a href="https://github.com/samerton/NamelessMC/archive/master.zip">Download</a></li>
+            </ul>
+	        <ul class="nav navbar-nav navbar-right">
+		      <li><a href="https://github.com/samerton/NamelessMC">GitHub</a></li>
+		      <li><a href="http://www.spigotmc.org/threads/nameless-minecraft-website-software.34810">Support</a></li>
+	        </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="container">
+	  <h2>NamelessMC Documentation - Websend</h2>
+	  <p>
+	    Websend is a Bukkit plugin made by Waterflames which allows communication between a website and a Minecraft server. The following guide will help you set up the plugin, and connect it to your website.
+	  </p>
+	  <p>
+	    Firstly, download the plugin from <a href="http://dev.bukkit.org/bukkit-plugins/websend/" target="_blank">Bukkit</a> and place the .jar file in your server's Plugins folder. Restart your server and a new folder will appear within your Plugins folder entitled "Websend".
+	  </p>
+	  <p>
+	    Enter the "Websend" folder within your Plugins and edit "config.txt". Find the line saying "PASS=", and add a password after the "=". <strong>Please ensure it is secure</strong>, and that nobody else knows the password. Next, find the line saying <code>#WEBLISTENER_ACTIVE=false/true</code>. Edit this line so it becomes <code>WEBLISTENER=true</code>.<br />Save the file and restart your Minecraft server.
+	  </p>
+	  <p>
+	    Finally, head into your NamelessMC admin panel. Once the addon is enabled, there will be a new "PermissionsEX" tab in the sidebar. Click on the link, and then the wrench icon (settings). Enable Websend and fill in your password, server IP and port (by default, Websend runs on port 4445).
+	  </p>
+	  <br /><br />
+	  <p>
+	    If your website is unable to communicate with Websend after filling in the details, an error on the "PermissionsEX" Admin tab will appear. If this is the case, ensure port 4445 on your Minecraft server is unblocked.
+	  </p>
+	  <p>
+	    The port on which Websend runs is configurable from the plugin's config.txt. Find the line <code>#ALTPORT=1234</code>, remove the "#" and change the port number.
+	  </p>
+	  <br /><br />
+	  <p>If you have any further questions, please visit the support thread on <a href="http://www.spigotmc.org/threads/nameless-minecraft-website-software.34810/" target="_blank">Spigot</a>.</p>
+      <hr>
+	  
+      <!-- FOOTER -->
+      <footer>
+		<span class="pull-right"><p>NamelessMC is released under the <a href="https://raw.githubusercontent.com/samerton/NamelessMC/master/LICENSE">MIT License</a></p></span>
+        <p>&copy; Samerton <?php echo date('Y'); ?></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="reqModal" tabindex="-1" role="dialog" aria-labelledby="reqModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="reqModalLabel">Requirements</h4>
+		  </div>
+		  <div class="modal-body">
+			PHP 5.3+<br />
+			PHP PDO and MySQLi extensions<br />
+			PHP-mcrypt extension<br />
+			PHP-GD extension<br />
+			MySQL database<br />
+			At least one Minecraft server<br />
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

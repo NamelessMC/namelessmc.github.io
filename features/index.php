@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Features page for the NamelessMC website package">
+    <meta name="author" content="Samerton">
+    <link rel="icon" href="favicon.ico">
+
+    <title>NamelessMC Website Software &bull; Features</title>
+
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+	
+	<style>
+	body {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+
+	.navbar {
+	  margin-bottom: 20px;
+	}
+
+	</style>
+	
+  </head>
+  
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../">NamelessMC</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../">Home</a></li>
+              <li class="active"><a href="./">Features</a></li>
+              <li><a href="http://demo.worldscapemc.co.uk">Demo</a></li>
+		      <li><a href="https://github.com/samerton/NamelessMC/archive/master.zip">Download</a></li>
+            </ul>
+	        <ul class="nav navbar-nav navbar-right">
+		      <li><a href="https://github.com/samerton/NamelessMC">GitHub</a></li>
+		      <li><a href="http://www.spigotmc.org/threads/nameless-minecraft-website-software.34810">Support</a></li>
+	        </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="container">
+	  <h2>Full feature list</h2>
+	  <ul>
+	    <li>Admin panel</li>
+	  </ul>
+	
+	  <center>
+	  <hr>
+	  <a href="https://github.com/samerton/NamelessMC/archive/master.zip" class="btn btn-primary btn-lg">Download</a>
+	  </hr>
+	  </center>
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; Samerton 2015</p>
+		<span class="pull-right"><p>NamelessMC is released under the <a href="https://raw.githubusercontent.com/samerton/NamelessMC/master/LICENSE">MIT License</a></p></span>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
